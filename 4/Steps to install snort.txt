@@ -1,0 +1,57 @@
+Steps to install snort on ubuntu
+
+1) $sudo apt update
+
+2) $sudo apt install snort
+
+3) During the installation
+
+1) we need to add enterface of our network
+
+to check that use command - $ifconfig
+
+4) set te range of netwrok address to check the ip address of pc
+use command - $hostname -I
+
+5) snort is installed!!!
+
+6) to run snort.conf file
+
+$sudo snort -T -c /etc/snort/snort.conf -i eth0
+add user interface name inplace of "eth0"
+
+7)strat the snort ids
+
+$sudo snort -A console -q -c /etc/snort/snort.conf -i eth0
+
+8) after turning snort ids on run UDP_dos.py file from another pc
+
+$python3 UDP_dos.pySteps to install snort on ubuntu
+
+1) $sudo apt update
+
+2) $sudo apt install snort
+
+3) During the installation
+
+1) we need to add enterface of our network
+
+to check that use command - $ifconfig
+
+4) set te range of netwrok address to check the ip address of pc
+use command - $hostname -I
+
+5) snort is installed!!!
+
+6) to run snort.conf file
+
+$sudo snort -T -c /etc/snort/snort.conf -i eth0
+add user interface name inplace of "eth0"
+
+7)strat the snort ids
+
+$sudo snort -A console -q -c /etc/snort/snort.conf -i eth0
+
+8) after turning snort ids on run UDP_dos.py file from another pc
+
+$python3 UDP_dos.py
